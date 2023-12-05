@@ -1,15 +1,15 @@
-FROM node:14-alpine
+# FROM node:14-alpine
 
-RUN apk update && \
-    apk upgrade && \
-    apk add --no-cache bash git openssh
+# RUN apk update && \
+#     apk upgrade && \
+#     apk add --no-cache bash git openssh
 
-RUN mkdir -p /usr/src/app
+# RUN mkdir -p /usr/src/app
 
-WORKDIR /usr/src/app
+# WORKDIR /usr/src/app
 
-COPY . /usr/src/app/
+# COPY . /usr/src/app/
 
-RUN npm install
+# RUN npm install
 
-CMD ["npm", "start"]
+# CMD ["npm", "start"]
