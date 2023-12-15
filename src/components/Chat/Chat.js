@@ -56,8 +56,8 @@ export const Chat = ({ location }) => {
   const [room, setRoom] = useState("");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  //const ENDPOINT = process.env.REACT_APP_API_URL;
-  const ENDPOINT = "https://chat-backend-iota-ruddy.vercel.app/";
+  const ENDPOINT = process.env.REACT_APP_API_URL;
+  //const ENDPOINT = "https://chat-backend-iota-ruddy.vercel.app/";
   useEffect(() => {
     console.log("Connecting to Socket.IO");
     const { name, room } = queryString.parse(location.search);
